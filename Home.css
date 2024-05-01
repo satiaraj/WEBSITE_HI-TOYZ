@@ -1,0 +1,503 @@
+:root {
+  --bg: #fff3e2;
+  --color1: #fa9884;
+  --color2: #ffe5ca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "M PLUS 1 Code", sans-serif;
+  background-color: var(--bg);
+  color: #fa9884;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 5%;
+  background: rgba(255, 229, 202, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #e74646;
+}
+
+.navbar .logo span {
+  color: #fa9884;
+}
+
+.navbar .tengah a {
+  color: #fa9884;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 0 1rem;
+  text-shadow: 2px 5px 7px #ffe5ca, 0px 0px 0px #000, 2px 5px 7px #ffe5ca;
+}
+
+.navbar .tengah a:hover {
+  color: #e74646;
+}
+
+.navbar .kiri a {
+  margin: 0 0.3rem;
+  color: var(--color1);
+}
+
+.navbar .kiri a.ber:hover {
+  color: #e74646;
+}
+
+#burger {
+  display: none;
+}
+
+.navbar .kiri a.gis {
+  color: #fa9884;
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  margin: 1rem;
+  font-size: 1.6rem;
+  color: var(--color2);
+  background-color: #fa9884;
+  border: 6px solid #fff3e2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+.navbar .kiri a.gis span {
+  color: #fff3e2;
+}
+
+.navbar .kiri a.gis:hover {
+  background-color: #e74646;
+}
+
+/* home section */
+.rumah {
+  min-height: 90vh;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  background-image: url(/img/carbg.jpg);
+  background-repeat: no-repeat;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.rumah .page1 {
+  padding: 0.3rem 5%;
+  padding-top: -6rem;
+  padding-left: 60rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.rumah .page1 span {
+  color: #e74646;
+}
+
+.rumah1 {
+  min-height: 70vh;
+  display: flex;
+  background: #ffffff;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  align-items: center;
+  margin-top: 0rem;
+}
+
+.rumah1 .gambar {
+  flex: 1 1 45rem;
+}
+
+.rumah1 .deskripsi {
+  flex: 1 1 45rem;
+}
+
+.rumah1 .deskripsi p {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.rumah1 .deskripsi p span {
+  color: #e74646;
+}
+
+.rumah1 .gambar img {
+  width: 100%;
+}
+
+.rumah2 {
+  min-height: 110vh;
+  padding: 0.3rem 5%;
+  background: #ffffff;
+}
+
+.rumah2 h2 {
+  color: #e74646;
+  font-size: 2.7rem;
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  margin: 1rem auto;
+  background: #ffffff;
+  border: 14px solid #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 62px;
+}
+
+.rumah2 h2 span {
+  color: #ffe5ca;
+}
+
+.rumah2 .model {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.rumah2 .model .model-img {
+  text-align: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 0rem;
+  width: 25rem;
+}
+
+.rumah2 .model .model-img img {
+  border: 4px solid #e74646;
+  width: 90%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+.rumah2 .model .model-img .judul {
+  margin: auto 0.5rem;
+  font-size: 1.5rem;
+  color: #e74646;
+}
+
+/* footer */
+.foter {
+  min-height: 15vh;
+  align-items: center;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  padding-top: 0.3rem;
+  padding-bottom: 0rem;
+  background-color: #ffe5ca;
+}
+
+.foter .foter-mid {
+  text-align: center;
+  margin-top: 0rem;
+}
+
+.foter h1 {
+  color: #e74646;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+}
+
+.foter h1 span {
+  color: #fa9884;
+}
+
+.foter .foter-mid .sosmed {
+  margin-top: 1rem;
+}
+
+.foter .foter-mid .sosmed a {
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  color: #fa9884;
+}
+
+.foter .foter-mid .sosmed a:hover {
+  color: #e74646;
+}
+
+.foter h5 {
+  padding-top: 1rem;
+}
+
+.foter h5 span {
+  color: #e74646;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: -6rem;
+    padding-left: 70rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1064px) {
+  html {
+    font-size: 70%;
+  }
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: -6rem;
+    padding-left: 70rem;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 973px) {
+  html {
+    font-size: 70%;
+  }
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: -6rem;
+    padding-left: 50rem;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 828px) {
+  html {
+    font-size: 62.5%;
+  }
+  #burger {
+    display: inline-block;
+  }
+  .navbar .tengah {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--color1);
+    width: 20rem;
+    height: 100vh;
+  }
+
+  .navbar .tengah.active {
+    right: 0;
+  }
+
+  .navbar .tengah a {
+    color: #ffe5ca;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: -4rem;
+    padding-left: 50rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .rumah1 {
+    flex-wrap: wrap;
+  }
+
+  .rumah2 .model {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 822px) {
+  html {
+    font-size: 70%;
+  }
+  .rumah1 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 715px) {
+  html {
+    font-size: 70%;
+  }
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: -6rem;
+    padding-left: 38rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .rumah1 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 676px) {
+  html {
+    font-size: 50%;
+  }
+  #burger {
+    display: inline-block;
+  }
+  .navbar .tengah {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--color1);
+    width: 20rem;
+    height: 100vh;
+  }
+
+  .navbar .tengah.active {
+    right: 0;
+  }
+
+  .navbar .tengah a {
+    color: #ffe5ca;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: -4rem;
+    padding-left: 50rem;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .rumah1 {
+    flex-wrap: wrap;
+  }
+
+  .foter {
+    min-height: 10vh;
+    align-items: center;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-top: 0.3rem;
+    padding-bottom: 0rem;
+    background-color: #ffe5ca;
+  }
+}
+
+@media (max-width: 536px) {
+  html {
+    font-size: 50%;
+  }
+  #burger {
+    display: inline-block;
+  }
+  .navbar .tengah {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--color1);
+    width: 20rem;
+    height: 100vh;
+  }
+
+  .navbar .tengah.active {
+    right: 0;
+  }
+
+  .navbar .tengah a {
+    color: #ffe5ca;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .rumah .page1 {
+    /* padding: 0.3rem 5%; */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0rem;
+    padding-bottom: 110%;
+    /* padding-left: 9rem; */
+    text-align: center;
+    font-size: 4rem;
+  }
+  .rumah1 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: 75rem;
+    padding-left: 0rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .rumah1 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 415px) {
+  html {
+    font-size: 45%;
+  }
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: 90rem;
+    padding-left: 0rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .rumah1 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 332px) {
+  html {
+    font-size: 45%;
+  }
+  .rumah .page1 {
+    padding: 0.3rem 5%;
+    padding-top: 80rem;
+    padding-left: 0rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .rumah1 {
+    flex-wrap: wrap;
+  }
+}

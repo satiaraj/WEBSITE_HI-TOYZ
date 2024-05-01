@@ -1,0 +1,315 @@
+:root {
+  --bg: #fff3e2;
+  --color1: #fa9884;
+  --color2: #ffe5ca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "M PLUS 1 Code", sans-serif;
+  background-color: var(--bg);
+  color: #fa9884;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 5%;
+  background: rgba(255, 229, 202, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .logo {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #e74646;
+}
+
+.navbar .logo span {
+  color: #fa9884;
+}
+
+.navbar .tengah a {
+  color: #fa9884;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 0 1rem;
+  text-shadow: 2px 5px 7px #ffe5ca, 0px 0px 0px #000, 2px 5px 7px #ffe5ca;
+}
+
+.navbar .tengah a:hover {
+  color: #e74646;
+}
+
+.navbar .kiri a {
+  margin: 0 0.3rem;
+  color: var(--color1);
+}
+
+.navbar .kiri a.ber:hover {
+  color: #e74646;
+}
+
+#burger {
+  display: none;
+}
+
+.navbar .kiri a.gis {
+  color: #fa9884;
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  margin: 1rem;
+  font-size: 1.6rem;
+  color: var(--color2);
+  background-color: #fa9884;
+  border: 6px solid #fff3e2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+.navbar .kiri a.gis span {
+  color: #fff3e2;
+}
+
+.navbar .kiri a.gis:hover {
+  background-color: #e74646;
+}
+
+/* register form */
+
+.bagian {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 4%;
+  align-items: center;
+}
+
+.bagian .gambar {
+  flex: 1 1 45rem;
+}
+
+.bagian .gambar img {
+  width: 100%;
+  /* margin-top: 13%;
+  margin-left: 15%; */
+}
+
+.bagian form {
+  flex: 1 1 30rem;
+  width: 400px;
+  margin-top: 3rem;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 1rem;
+  border: 13px solid #ffe5ca;
+  border-radius: 1.5rem;
+  background-color: #fa9884;
+}
+
+.bagian .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+  color: #ffe5ca;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
+  align-items: center;
+}
+
+.bagian .form-group input {
+  outline: none;
+}
+
+.bagian .form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="password"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  border-radius: 4rem;
+  background-color: #fff3e2;
+}
+
+.bagian .form-btn {
+  padding: 0.5rem 1rem;
+  color: #fa9884;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: #fff3e2;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.bagian .form-btn:hover {
+  background-color: #e74646;
+}
+
+.bagian .error-msg {
+  font-size: 10px;
+  color: red;
+  transition: 2s;
+}
+
+#agree-term + label {
+  color: #fff3e2;
+  padding-left: 1rem;
+}
+
+/* footer */
+.foter {
+  align-items: center;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  padding-top: 0.3rem;
+  padding-bottom: 0rem;
+  background-color: #ffe5ca;
+}
+
+.foter .foter-mid {
+  text-align: center;
+  margin-top: 0rem;
+}
+
+.foter h1 {
+  color: #e74646;
+}
+
+.foter h1 span {
+  color: #fa9884;
+}
+
+.foter .foter-mid .sosmed {
+  margin-top: 1rem;
+}
+
+.foter .foter-mid .sosmed a {
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  color: #fa9884;
+}
+
+.foter .foter-mid .sosmed a:hover {
+  color: #e74646;
+}
+
+.foter h5 {
+  padding-top: 1rem;
+}
+
+.foter h5 span {
+  color: #e74646;
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 1118px) {
+  html {
+    font-size: 70%;
+  }
+
+  .foter {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+}
+
+@media (max-width: 784px) {
+  html {
+    font-size: 62.5%;
+  }
+  #burger {
+    display: inline-block;
+  }
+  .navbar .tengah {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--color1);
+    width: 20rem;
+    height: 100vh;
+  }
+
+  .navbar .tengah.active {
+    right: 0;
+  }
+
+  .navbar .tengah a {
+    color: #ffe5ca;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .bagian {
+    flex-wrap: wrap;
+  }
+
+  .bagian form {
+    flex: 1 1 30rem;
+    min-height: 40vh;
+    width: 400px;
+    margin-top: 3rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 1rem;
+    border: 13px solid #ffe5ca;
+    border-radius: 1.5rem;
+    background-color: #fa9884;
+  }
+
+  .foter {
+    position: static;
+  }
+}
+
+@media (max-width: 537px) {
+  html {
+    font-size: 50%;
+  }
+
+  .bagian form {
+    flex: 1 1 30rem;
+    min-height: 40vh;
+    width: 250px;
+    margin-top: 3rem;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 1rem;
+    border: 13px solid #ffe5ca;
+    border-radius: 1.5rem;
+    background-color: #fa9884;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+}

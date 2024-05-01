@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HI-TOYZ-REGISTER</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="Home.html" class="logo">HI<span>-</span>TOYZ</a>
+
+      <div class="tengah">
+        <a href="Home.html">Home</a>
+        <a href="Product.html">Product</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Event.html">Event</a>
+      </div>
+
+      <div class="kiri">
+        <a href="register.html" class="gis">REGISTER<span>to</span>HI</a>
+        <a href="#" id="burger" class="ber"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- register -->
+    <section class="bagian">
+      <div class="gambar">
+        <img src="img/sasuke2.png" />
+      </div>
+
+      <form id="register-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="name" />
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" />
+        </div>
+
+        <!-- <div class="form-group">
+       <label>Age</label>
+       <input value ="21" min="21" max="60" type="number" id="age"/>
+      </div>  -->
+
+        <div class="form-group">
+          <label>password</label>
+          <input type="password" id="password" />
+        </div>
+
+        <div class="form-group">
+          <label>confirm</label>
+          <input type="password" id="confirm-password" />
+        </div>
+
+        <div class="form-group">
+          <label>Birth Date</label>
+          <input placeholder="input birth date" type="date" id="birth-date" />
+        </div>
+      
+
+        <div style="margin-bottom: 4rem">
+          <input type="checkbox" id="agree-term" />
+          <label for="agree-term" class="dull">
+            i agree to the terms n conditions
+          </label>
+        </div>
+        <div id="error" class="error-msg"></div>
+        <input class="form-btn" type="submit" value="submit" />
+      </form>
+    </section>
+
+    <!-- register -->
+
+    <!-- footer -->
+    <footer class="foter">
+      <h1>HI<span>-</span>TOYZ</h1>
+
+      <div class="foter-mid">
+        <h2>Follow Us</h2>
+        <div class="sosmed">
+          <a href="#"><i data-feather="youtube"></i></a>
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="facebook"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+      </div>
+
+      <h5><span>HI</span>-<span>TOYZ </span> © 2023 All rights reserved.</h5>
+    </footer>
+    <!-- footer -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="hci.js"></script>
+  </body>
+</html>
